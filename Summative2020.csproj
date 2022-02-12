@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DC1D32E-EEA6-4E4A-9F28-E6B859B51FA3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Summative2020</RootNamespace>
+    <AssemblyName>Summative2020</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlayButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\PlayButtonHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\InstructionsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\InstructionsButtonHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bullet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\shotgun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\semiautorifle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zombie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Faketransparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Faketransparent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\rifleShot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\pumpshotgunShot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\shotgunReload.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\shellFall.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\rifleReload.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\zombieMoan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\zombieGrunt.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GunPanel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\semiautorifle %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pumpshotgun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\reloadBar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\fireBar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\NoAmmoAlert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ReloadAlert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GunPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\autorifle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\autorifle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lightmachinegun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\lightmachinegun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pumpshotgun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\semishotgun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\semishotgun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sniperrifle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\sniperrifle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\submachinegun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\submachinegun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\buyammo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\buyammohover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\buygunhover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\buygun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\semiautorifle2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\chaching.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BackButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BackButtonHover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\backhover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HealthBar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\HealthBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\doorBreak.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\death.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Instructions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Instructions %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\titlepage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zombiewithC.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
